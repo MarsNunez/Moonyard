@@ -3,7 +3,7 @@
 @tailwind utilities;
 
 html {
-  background-color: #09207d;
+  background-color: #020511;
   color: white;
 }
 
@@ -12,16 +12,26 @@ html {
   left: 0;
 }
 
-/* .screen {
-  min-height: calc(100vh);
-} */
-
 .home_container {
   background-image: url(/img/homebg.jpeg);
   background-size: cover;
   background-position: center;
 }
 
+.message_container {
+  background-image: url(/img/stars-bg.avif);
+  background-size: cover;
+  background-position: center;
+}
+
 p {
   font-family: "Actor", sans-serif;
+}
+
+.stick {
+  background-color: rgb(79 70 229 / 1);
+  height: 45px;
+  width: 5px;
+  border-radius: 10px;
+  margin: 30px auto;
 }
