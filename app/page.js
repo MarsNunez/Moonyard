@@ -2,13 +2,13 @@ import Navbar from "./components/Navbar";
 
 export default function Home() {
   return (
-    <main className="">
+    <main className="home_view">
       <div className="absolute w-full">
         <Navbar />
       </div>
       {/* LANDING */}
       <div className="home_container min-h-screen">
-        <div className=" h-screen bg-black bg-opacity-30 flex items-center">
+        <div className="h-screen bg-black bg-opacity-30 flex justify-center items-center">
           <div className="text-center">
             <h1 className="uppercase font-bold text-4xl">
               The knowledge must flow
@@ -115,7 +115,8 @@ export default function Home() {
           </div>
         </div>
       </section>
-      <section className="message_container min-h-screen">
+      {/* HOME MESSAGE */}
+      <section className="stars_bg min-h-screen">
         <div className="h-screen w-full flex items-center justify-center">
           <figure>
             <img
@@ -136,6 +137,128 @@ export default function Home() {
             <h3 className="text-indigo-600 uppercase font-bold mt-7">
               Moonyard
             </h3>
+          </div>
+        </div>
+      </section>
+      {/* PLANETS */}
+      <section className="stars_bg text-center font-semibold text-2xl px-10 pb-16">
+        <h2 className="uppercase">
+          Travel across
+          <span className="text-indigo-600"> different planets</span>
+        </h2>
+        {/* PLANETS WRAPPER */}
+        <div className="mt-10 flex flex-col gap-5">
+          <div className="flex flex-col gap-7 items-center justify-center">
+            <figure className="w-52">
+              <img
+                src="/img/p1.png"
+                alt="codeon planet image"
+                className="h-full w-full"
+              />
+            </figure>
+            <div>
+              <h5 className="text-indigo-600 mb-2 text-2xl">Codeon</h5>
+              <p className="text-base">
+                Population: 356 inhabitants. <br />
+                Spoken language: HTML and CSS. <br />
+                Number of routes: 4. <br />
+                Motto: Strong foundations are everything.
+              </p>
+            </div>
+          </div>
+          <div className="stick" />
+          <div className="flex flex-col gap-7 items-center justify-center">
+            <figure className="w-72">
+              <img
+                src="/img/p2.png"
+                alt="scriptia planet image"
+                className="h-full w-full"
+              />
+            </figure>
+            <div>
+              <h5 className="text-indigo-600 mb-2 text-2xl">Scriptia</h5>
+              <p className="text-base">
+                Population: 248 inhabitants. <br />
+                Spoken language: Javascript. <br />
+                Number of routes: 5. <br />
+                Motto: Give me a goal and I will achieve it.
+              </p>
+            </div>
+          </div>
+          <div className="stick" />
+          <div className="flex flex-col gap-7 items-center justify-center">
+            <figure className="w-36">
+              <img
+                src="/img/p3.png"
+                alt="codeon planet image"
+                className="h-full w-full"
+              />
+            </figure>
+            <div>
+              <h5 className="text-indigo-600 mb-2 text-2xl">Pytherium</h5>
+              <p className="text-base">
+                Population: 1045 inhabitants. <br />
+                Spoken language: Python. <br />
+                Number of routes: 8. <br />
+                Motto: Observe, automate and surpass.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+      {/* LATEST POSTS */}
+      <section className="p-10 py-14">
+        <h2 className="uppercase text-2xl font-semibold text-center mb-10">
+          Latest <span className="text-indigo-600">posts</span>
+        </h2>
+        <div className="flex flex-col gap-5">
+          <div className="rounded-lg overflow-hidden text-black border-2  border-indigo-600">
+            <figure className="w-full h-44">
+              <img
+                src="https://images.unsplash.com/photo-1515879218367-8466d910aaa4?q=80&w=1000&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTB8fGNvZGV8ZW58MHx8MHx8fDA%3D"
+                alt="post image"
+                className="h-full w-full object-cover object-center"
+              />
+            </figure>
+            <div className="bg-white px-6 py-3">
+              <p className="text-sm">20 Oct 2023</p>
+              <h4 className="text-xl font-medium">Some title</h4>
+              <p className="text-sm line-clamp-3">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+                enim ad minim veniam, quis nostrud exercitation ullamco laboris
+                nisi ut aliquip ex ea commodo consequat.
+              </p>
+              <button className="text-white bg-indigo-600 rounded-full px-3 py-2 mt-3">
+                Read more
+              </button>
+            </div>
+          </div>
+          <div className="rounded-lg overflow-hidden text-black border-2  border-indigo-600">
+            <figure className="w-full h-44">
+              <img
+                src="https://images.unsplash.com/photo-1515879218367-8466d910aaa4?q=80&w=1000&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTB8fGNvZGV8ZW58MHx8MHx8fDA%3D"
+                alt="post image"
+                className="h-full w-full object-cover object-center"
+              />
+            </figure>
+            <div className="bg-white px-6 py-3">
+              <p className="text-sm">20 Oct 2023</p>
+              <h4 className="text-xl font-medium">Some title</h4>
+              <p className="text-sm line-clamp-3">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+                enim ad minim veniam, quis nostrud exercitation ullamco laboris
+                nisi ut aliquip ex ea commodo consequat.
+              </p>
+              <button className="text-white bg-indigo-600 rounded-full px-3 py-2 mt-3">
+                Read more
+              </button>
+            </div>
+          </div>
+          <div className="flex items-center w-fit mx-auto px-5 py-1">
+            <p className="text-center">More posts</p>
+            <i className="lni lni-chevron-right"></i>
           </div>
         </div>
       </section>
