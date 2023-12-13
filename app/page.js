@@ -3,9 +3,10 @@ import Navbar from "./components/Navbar";
 export default function Home() {
   return (
     <main className="home_view">
-      <div className="absolute w-full">
+      {/* <div className="absolute w-full">
         <Navbar />
-      </div>
+      </div> */}
+
       {/* LANDING */}
       <div className="home_container min-h-screen">
         <div className="h-screen bg-black bg-opacity-30 flex justify-center items-center">

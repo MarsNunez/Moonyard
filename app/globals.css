@@ -28,6 +28,10 @@ p {
   font-family: "Actor", sans-serif;
 }
 
+.screen {
+  min-height: calc(100vh - 240px);
+}
+
 .stick {
   background-color: rgb(79 70 229 / 1);
   height: 60px;
