@@ -1,7 +1,7 @@
 const Footer = () => {
   return (
-    <footer className="">
-      <div className="flex justify-between px-10">
+    <footer className="max-w-4xl lg:mx-auto lg:mt-16">
+      <div className="flex justify-between px-10 max-w-2xl mx-auto lg:mx-0 lg:w-fit lg: gap-40 lg:pb-5">
         <div>
           <h6 className="text-lg font-semibold">Quick Links</h6>
           <ul className="text-sm flex flex-col gap-3 pt-3">
@@ -24,7 +24,7 @@ const Footer = () => {
             </li>
             <li className="flex items-center gap-1 justify-end">
               <i className="lni lni-twitter-original"></i>
-              <p>Twitter || X</p>
+              <p>Twitter / X</p>
             </li>
             <li className="flex items-center gap-1 justify-end">
               <i className="lni lni-github-original"></i>
@@ -33,8 +33,8 @@ const Footer = () => {
           </ul>
         </div>
       </div>
-      <div className="flex justify-center">
-        <div className="absolute overflow-hidden flex items-end -mt-3">
+      <div className="flex justify-center lg:justify-end">
+        <div className="absolute overflow-hidden flex items-end -mt-3 lg:-mt-48">
           <div className="absolute text-center w-full z-10 pb-3">
             <h6 className="text-xs font-normal">Mars Nunez presents:</h6>
             <h2 className="text-3xl uppercase font-bold tracking-widest">

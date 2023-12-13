@@ -9,11 +9,11 @@ export default function Home() {
       {/* LANDING */}
       <div className="home_container min-h-screen">
         <div className="h-screen bg-black bg-opacity-30 flex justify-center items-center">
-          <div className="text-center">
-            <h1 className="uppercase font-bold text-4xl">
+          <div className="text-center px-14">
+            <h1 className="uppercase font-bold text-4xl md:text-5xl">
               The knowledge must flow
             </h1>
-            <p className="text-md max-w-xs mx-auto">
+            <p className="text-md max-w-xs mx-auto md:text-lg">
               Join us and start your web development odyssey in the digital
               cosmos!
             </p>
@@ -24,49 +24,68 @@ export default function Home() {
         </div>
       </div>
       {/* STEPS */}
-      <section className="bg-white text-black text-center py-14 px-3">
-        <h3 className="font-semibold text-indigo-600 text-3xl">
-          How to grow in the universe?
-        </h3>
-        <p>All you need to do in just 3 spets</p>
-        <div className="mt-10 px-16">
-          <h4 className="text-2xl font-semibold">Learn</h4>
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod
-          </p>
-        </div>
-        <div className="stick" />
-        <div className="px-16">
-          <h4 className="text-2xl font-semibold">Create</h4>
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod
-          </p>
-        </div>
-        <div className="stick" />
-        <div className="px-16">
-          <h4 className="text-2xl font-semibold">Travel</h4>
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod
-          </p>
+      <section className="bg-white text-black text-center lg:text-left py-14 px-10 md:py-20">
+        <div className="max-w-5xl lg:mx-auto">
+          <h3 className="font-semibold text-indigo-600 text-3xl">
+            How to grow in the universe?
+          </h3>
+          <p>All you need to do in just 3 steps</p>
+          <div className="lg:grid grid-cols-3 lg:mt-11">
+            <div className="mt-10 lg:mt-0 px-16 lg:px-0">
+              <div className="flex w-fit mx-auto lg:mx-0 text-2xl items-center gap-2">
+                <div className="text-3xl lg:text-indigo-600">
+                  <i className="lni lni-invention"></i>
+                </div>
+                <h4 className="font-semibold lg:text-indigo-600">Learn</h4>
+              </div>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod
+              </p>
+            </div>
+            <div className="stick lg:hidden" />
+            <div className="px-16 lg:px-0">
+              <div className="flex w-fit mx-auto lg:mx-0 text-2xl items-center gap-2">
+                <div className="text-2xl lg:text-indigo-600 lg:text-3xl">
+                  <i className="lni lni-hammer"></i>
+                </div>
+                <h4 className="font-semibold lg:text-indigo-600">Create</h4>
+              </div>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod
+              </p>
+            </div>
+            <div className="stick lg:hidden" />
+            <div className="px-16 lg:px-0">
+              <div className="flex w-fit mx-auto lg:mx-0 text-2xl items-center gap-2">
+                <div className="lg:text-indigo-600 lg:text-3xl">
+                  <i className="lni lni-rocket"></i>
+                </div>
+                <h4 className="font-semibold lg:text-indigo-600">Travel</h4>
+              </div>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod
+              </p>
+            </div>
+          </div>
         </div>
       </section>
       {/* INTEREST */}
-      <section className="py-14 px-7 text-center">
+      <section className="py-14 lg:py-24 px-7 text-center">
         <h3 className="text-2xl uppercase font-semibold">
           Are you <span className="text-indigo-600">interested?</span>
         </h3>
         <p>Let us tell you 3 important things</p>
         {/* 3 CARDS */}
-        <div className="mt-12 flex flex-col gap-8">
-          <div className="border bg-white rounded-[40px] py-6 px-7 pl-24 flex items-center">
-            <figure className="w-28 mx-auto absolute">
+        <div className="mt-12 lg:mt-36 flex max-lg:flex-col gap-8 lg:grid grid-cols-3 lg:max-w-4xl mx-auto">
+          <div className="border bg-white rounded-[40px] lg:rounded-3xl py-6 lg:pb-8 lg:pt-20 px-7 max-lg:pl-24 lg:h-fit flex lg:flex-col lg:justify-between items-center max-w-xl mx-auto">
+            <figure className="w-28 lg:w-36 mx-auto max-lg:absolute absolute">
               <img
                 src="/img/planet.png"
                 alt="moons-img"
-                className="h-full w-full relative mx-auto -left-28"
+                className="h-full w-full mx-auto relative lg:-top-40 max-lg:-left-28"
               />
             </figure>
             <div>
@@ -77,12 +96,12 @@ export default function Home() {
               </p>
             </div>
           </div>
-          <div className="border bg-white rounded-[40px] py-6 px-7 pl-24 flex items-center">
-            <figure className="w-28 mx-auto absolute">
+          <div className="border bg-white rounded-[40px] lg:rounded-3xl py-6 lg:pb-8 lg:pt-20 px-7 max-lg:pl-24 lg:h-fit flex lg:flex-col lg:justify-between items-center max-w-xl mx-auto">
+            <figure className="w-28 lg:w-36 mx-auto max-lg:absolute absolute">
               <img
                 src="/img/building.png"
                 alt="moons-img"
-                className="h-full w-full relative mx-auto -left-28"
+                className="h-full w-full mx-auto relative lg:-top-40 max-lg:-left-28"
               />
             </figure>
             <div>
@@ -95,12 +114,12 @@ export default function Home() {
               </p>
             </div>
           </div>
-          <div className="border bg-white rounded-[40px] py-6 px-7 pl-24 flex items-center">
-            <figure className="w-28 h-28 mx-auto absolute">
+          <div className="border bg-white rounded-[40px] lg:rounded-3xl py-6 lg:pb-8 lg:pt-20 px-7 max-lg:pl-24 lg:h-fit flex lg:flex-col lg:justify-between items-center max-w-xl mx-auto">
+            <figure className="w-28 lg:w-36 mx-auto max-lg:absolute absolute">
               <img
                 src="/img/shield.png"
                 alt="moons-img"
-                className="h-full w-full relative mx-auto -left-28"
+                className="h-full w-full mx-auto relative lg:-top-40 max-lg:-left-28"
               />
             </figure>
             <div>
@@ -125,8 +144,8 @@ export default function Home() {
               className="rotate-90"
             />
           </figure>
-          <div className="absolute bg-white bg-opacity-60 text-center mx-10 p-7 rounded-3xl">
-            <p className="text-black text-sm">
+          <div className="absolute bg-white bg-opacity-60 text-center mx-10 p-7 rounded-3xl max-w-2xl">
+            <p className="text-black text-sm lg:text-base">
               Bienvenido al fascinante universo de aprendizaje en línea, donde
               cada conocimiento es un planeta por descubrir y conquistar. En
               nuestra página web, te invitamos a embarcarte en un emocionante
@@ -134,21 +153,21 @@ export default function Home() {
               aprende su tecnología, crea asombrosos proyectos y expande tu
               horizonte digital como un verdadero desarrollador(a) de la web.
             </p>
-            <h3 className="text-indigo-600 uppercase font-bold mt-7">
+            <h3 className="text-indigo-600 uppercase font-bold mt-7 lg:text-xl">
               Moonyard
             </h3>
           </div>
         </div>
       </section>
       {/* PLANETS */}
-      <section className="stars_bg text-center font-semibold text-2xl px-10 pb-16">
-        <h2 className="uppercase">
+      <section className="stars_bg text-center font-semibold text-2xl px-10 pb-16 lg:pb-28">
+        <h2 className="uppercase lg:text-2xl">
           Travel across
           <span className="text-indigo-600"> different planets</span>
         </h2>
         {/* PLANETS WRAPPER */}
-        <div className="mt-10 flex flex-col gap-5">
-          <div className="flex flex-col gap-7 items-center justify-center">
+        <div className="mt-10 lg:mt-20 flex flex-col gap-5 lg:gap-24">
+          <div className="flex flex-col lg:flex-row gap-7 lg:gap-10 items-center justify-center">
             <figure className="w-52">
               <img
                 src="/img/p1.png"
@@ -156,37 +175,47 @@ export default function Home() {
                 className="h-full w-full"
               />
             </figure>
-            <div>
+            <div className="lg:text-left">
               <h5 className="text-indigo-600 mb-2 text-2xl">Codeon</h5>
               <p className="text-base">
-                Population: 356 inhabitants. <br />
-                Spoken language: HTML and CSS. <br />
-                Number of routes: 4. <br />
-                Motto: Strong foundations are everything.
+                <span className="text-indigo-400">Population: </span>356
+                inhabitants. <br />
+                <span className="text-indigo-400">Spoken language: </span>HTML
+                and CSS. <br />
+                <span className="text-indigo-400">
+                  Number of routes:
+                </span> 4. <br />
+                <span className="text-indigo-400">Motto: </span>Strong
+                foundations are everything.
               </p>
             </div>
           </div>
-          <div className="stick" />
-          <div className="flex flex-col gap-7 items-center justify-center">
-            <figure className="w-72">
+          <div className="stick lg:hidden" />
+          <div className="flex flex-col lg:flex-row gap-7 lg:gap-10 items-center justify-center">
+            <figure className="w-72 lg:order-last">
               <img
                 src="/img/p2.png"
                 alt="scriptia planet image"
                 className="h-full w-full"
               />
             </figure>
-            <div>
+            <div className="lg:text-right">
               <h5 className="text-indigo-600 mb-2 text-2xl">Scriptia</h5>
               <p className="text-base">
-                Population: 248 inhabitants. <br />
-                Spoken language: Javascript. <br />
-                Number of routes: 5. <br />
-                Motto: Give me a goal and I will achieve it.
+                <span className="text-indigo-400">Population:</span> 248
+                inhabitants. <br />
+                <span className="text-indigo-400">Spoken language: </span>
+                Javascript. <br />
+                <span className="text-indigo-400">
+                  Number of routes:
+                </span> 5. <br />
+                <span className="text-indigo-400">Motto:</span> Give me a goal
+                and I will achieve it.
               </p>
             </div>
           </div>
-          <div className="stick" />
-          <div className="flex flex-col gap-7 items-center justify-center">
+          <div className="stick lg:hidden" />
+          <div className="flex flex-col lg:flex-row gap-7 lg:gap-10 items-center justify-center">
             <figure className="w-36">
               <img
                 src="/img/p3.png"
@@ -194,13 +223,18 @@ export default function Home() {
                 className="h-full w-full"
               />
             </figure>
-            <div>
+            <div className="lg:text-left">
               <h5 className="text-indigo-600 mb-2 text-2xl">Pytherium</h5>
               <p className="text-base">
-                Population: 1045 inhabitants. <br />
-                Spoken language: Python. <br />
-                Number of routes: 8. <br />
-                Motto: Observe, automate and surpass.
+                <span className="text-indigo-400">Population: </span>
+                1045 inhabitants. <br />
+                <span className="text-indigo-400">Spoken language: </span>
+                Python. <br />
+                <span className="text-indigo-400">
+                  Number of routes:{" "}
+                </span>8. <br />
+                <span className="text-indigo-400">Motto: </span>Observe,
+                automate and surpass.
               </p>
             </div>
           </div>
@@ -211,8 +245,8 @@ export default function Home() {
         <h2 className="uppercase text-2xl font-semibold text-center mb-10">
           Latest <span className="text-indigo-600">posts</span>
         </h2>
-        <div className="flex flex-col gap-5">
-          <div className="rounded-lg overflow-hidden text-black border-2  border-indigo-600">
+        <div className="flex flex-col lg:flex-row lg:max-w-3xl w-full mx-auto gap-5 md:gap-10 items-center">
+          <div className="rounded-lg overflow-hidden text-black border-2  border-indigo-600 max-w-xl">
             <figure className="w-full h-44">
               <img
                 src="https://images.unsplash.com/photo-1515879218367-8466d910aaa4?q=80&w=1000&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTB8fGNvZGV8ZW58MHx8MHx8fDA%3D"
@@ -234,7 +268,7 @@ export default function Home() {
               </button>
             </div>
           </div>
-          <div className="rounded-lg overflow-hidden text-black border-2  border-indigo-600">
+          <div className="rounded-lg overflow-hidden text-black border-2  border-indigo-600 max-w-xl">
             <figure className="w-full h-44">
               <img
                 src="https://images.unsplash.com/photo-1515879218367-8466d910aaa4?q=80&w=1000&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTB8fGNvZGV8ZW58MHx8MHx8fDA%3D"
@@ -256,10 +290,10 @@ export default function Home() {
               </button>
             </div>
           </div>
-          <div className="flex items-center w-fit mx-auto px-5 py-1">
-            <p className="text-center">More posts</p>
-            <i className="lni lni-chevron-right"></i>
-          </div>
+        </div>
+        <div className="flex items-center w-fit mx-auto px-5 py-1 mt-10">
+          <p className="text-center">More posts</p>
+          <i className="lni lni-chevron-right"></i>
         </div>
       </section>
     </main>
