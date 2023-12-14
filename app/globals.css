@@ -24,6 +24,15 @@ html {
   background-position: center;
 }
 
+.bg_image {
+  background-size: cover;
+  background-position: center;
+}
+
+.bg_secundary {
+  background-color: #0f1014;
+}
+
 p {
   font-family: "Actor", sans-serif;
 }

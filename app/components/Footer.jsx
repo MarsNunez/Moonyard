@@ -1,6 +1,6 @@
 const Footer = () => {
   return (
-    <footer className="max-w-4xl lg:mx-auto lg:mt-16">
+    <footer className="max-w-4xl mx-auto lg:mt-16">
       <div className="flex justify-between px-10 max-w-2xl mx-auto lg:mx-0 lg:w-fit lg: gap-40 lg:pb-5">
         <div>
           <h6 className="text-lg font-semibold">Quick Links</h6>
