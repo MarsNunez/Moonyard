@@ -1,7 +1,7 @@
 const Footer = () => {
   return (
     <footer className="max-w-4xl mx-auto lg:mt-16">
-      <div className="flex justify-between px-10 max-w-2xl mx-auto lg:mx-0 lg:w-fit lg: gap-40 lg:pb-5">
+      <div className="flex justify-between px-10 max-w-2xl mx-auto lg:mx-0 lg:w-fit lg:pb-5">
         <div>
           <h6 className="text-lg font-semibold">Quick Links</h6>
           <ul className="text-sm flex flex-col gap-3 pt-3">
@@ -33,6 +33,7 @@ const Footer = () => {
           </ul>
         </div>
       </div>
+
       <div className="flex justify-center lg:justify-end">
         <div className="absolute overflow-hidden flex items-end -mt-3 lg:-mt-48">
           <div className="absolute text-center w-full z-10 pb-3">
