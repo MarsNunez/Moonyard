@@ -23,7 +23,7 @@ const CourseCard = () => {
         </p>
         <div className="flex items-center justify-center mt-3">
           <Link
-            href={"/moons/moon/12031231923"}
+            href={"/moons/pytherium/12031231923"}
             className="font-light mx-auto bg-gradient-to-r from-indigo-600 via-indigo-800 to-indigo-900 rounded-full px-3 py-[2px]"
           >
             Read more
