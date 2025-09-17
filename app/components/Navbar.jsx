@@ -32,7 +32,7 @@ const Navbar = () => {
               Moons
             </Link>
             <Link
-              href={"/about"}
+              href={"/"}
               className={`tracking-wider ${
                 path == "/about" && "text-indigo-600 font-semibold"
               }`}
@@ -40,7 +40,7 @@ const Navbar = () => {
               About
             </Link>
             <Link
-              href={"/blog"}
+              href={"/"}
               className={`tracking-wider ${
                 path == "/blog" && "text-indigo-600 font-semibold"
               }`}
